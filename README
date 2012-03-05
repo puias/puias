@@ -1,0 +1,27 @@
+PUIAS Princeton University/Institute for Advanced Study Linux
+
+This repository holds the spec files, patches and contributed sources for
+building the PUIAS distribution.
+
+There are the following main directories
+
+  * core - base repository, packages provided upstream are not represented
+		unless modified.
+  * addons - packages that are updated often and supported 
+	* computational - similar to addons but focused on computational and
+	  scientific 
+  * unsupported - unsupported repository, packages that may not
+	  be updated frequently and may not be forward ported to new releases.
+
+Within each of these directories, each package has it's own directory, in
+the package directory is a  SPECS and SOURCES directory.  SPECS holds the
+rpm spec file and SOURCES has the patches and locally modified sources,
+original sources are not version controlled.
+
+The package coq in unsupported has the following directories
+
+/puias
+      /unsupported
+                  /coq
+                      /SPECS
+                      /SOURCES
